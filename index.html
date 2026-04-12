@@ -1,59 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Gabor Batta - Human rights case, ECHR application, Strasbourg attack 2019, PKKB 16.B.21.716/2018">
-<meta name="keywords" content="Gabor Batta, Batta Gabor, ECHR, European Court of Human Rights, Strasbourg attack, Hungary, human rights, PKKB, EU Ombudsman">
-<title>Gabor Batta - Human Rights Case</title>
-<style>
-body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #fff; color: #222; }
-h1 { color: #1a1a8c; }
-h2 { color: #333; border-bottom: 2px solid #1a1a8c; padding-bottom: 5px; }
-a { color: #1a1a8c; }
-.lang { background: #f0f0f0; padding: 15px; border-radius: 8px; margin: 10px 0; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice for Gabor Batta | Igazságot Batta Gábornak</title>
+    
+    <!-- Google Search Console verification -->
+    <meta name="google-site-verification" content="google429b353a0b763a4d" />
+    
+    <meta name="description" content="Batta Gábor erőszakos támadás áldozata Strasbourgban. 6 évig nem nyomoztak. Most börtönnel fenyegetik." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <style>
+        :root {
+            --ink: #1a1208;
+            --paper: #f5f0e8;
+            --red: #c0392b;
+            --mid: #6b5e4a;
+            --light: #e8e0d0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--paper); color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; font-weight: 300; line-height: 1.7; }
+
+        .lang-bar { background: var(--ink); display: flex; justify-content: flex-end; padding: 0.4rem 1.5rem; gap: 0.5rem; }
+        .lang-btn { font-family: 'Space Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.8rem; border: 1px solid rgba(255,255,255,0.3); background: transparent; color: rgba(255,255,255,0.6); cursor: pointer; transition: all 0.2s; }
+        .lang-btn.active { background: var(--red); color: #fff; border-color: var(--red); }
+        .lang-btn:hover { color: #fff; border-color: #fff; }
+
+        .urgent { background: var(--red); color: #fff; text-align: center; padding: 0.75rem 1rem; font-family: 'Space Mono', monospace; font-size: 0.72rem; letter-spacing: 0.08em; animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.85} }
+
+        .masthead { border-top: 4px solid var(--ink); border-bottom: 1px solid var(--ink); text-align: center; padding: 2rem 1rem 1.5rem; }
+        .masthead-label { font-family: 'Space Mono', monospace; font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.75rem; }
+        .masthead h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 900; line-height: 1.05; }
+        .masthead h1 span { color: var(--red); }
+        .masthead-sub { font-family: 'Playfair Display', serif; font-size: clamp(1rem, 3vw, 1.5rem); font-style: italic; color: var(--mid); margin-top: 0.4rem; }
+
+        .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+
+        .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; padding: 3rem 0 2rem; border-bottom: 1px solid var(--ink); }
+        @media (max-width: 640px) { .hero { grid-template-columns: 1fr; gap: 1.5rem; } }
+        .kicker { font-family: 'Space Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; }
+        .hero-text h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.3rem, 3.5vw, 1.9rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+        .hero-text p { font-size: 1rem; color: #2a2218; }
+        p + p { margin-top: 0.9rem; }
+        .hero-image img { width: 100%; border: 1px solid var(--mid); display: block; }
+
+        section { padding: 2.5rem 0; border-bottom: 1px solid var(--light); }
+        .section-header { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem; }
+        .section-num { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; color: var(--light); line-height: 1; flex-shrink: 0; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 700; border-left: 3px solid var(--red); padding-left: 0.75rem; line-height: 1.2; }
+
+        .pull-quote { border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); padding: 1.5rem 0; margin: 2rem 0; font-family: 'Playfair Display', serif; font-size: clamp(1rem, 2.8vw, 1.4rem); font-style: italic; color: var(--red); text-align: center; line-height: 1.4; }
+
+        .images-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px,1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .images-grid figure { display:flex; flex-direction:column; gap:0.4rem; }
+        .images-grid img { width:100%; border:1px solid var(--mid); }
+        .images-grid figcaption { font-size:0.7rem; color:var(--mid); font-style:italic; }
+
+        .help-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px,1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .help-card { background:var(--ink); color:var(--paper); padding:1.5rem; text-decoration:none; display:block; transition:background .2s; }
+        .help-card:hover { background:var(--red); }
+        .hc-label { font-family:'Space Mono',monospace; font-size:0.58rem; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.5rem; opacity:0.7; }
+        .hc-title { font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:700; line-height:1.3; }
+        .hc-sub { font-size:0.78rem; margin-top:0.4rem; opacity:0.8; }
+
+        .contact-block { background:var(--light); border-left:4px solid var(--red); padding:1.5rem; margin-top:1.5rem; font-family:'Space Mono',monospace; font-size:0.78rem; line-height:2; }
+        .contact-block a { color:var(--red); text-decoration:none; }
+    </style>
 </head>
-<body>
+<body class="lang-en">
 
-<h1>Gabor Batta – Human Rights Case</h1>
-<h1>Batta Gábor – Emberi jogi ügy</h1>
-
-<div class="lang">
-<h2>English</h2>
-<p>My name is <strong>Gabor Batta</strong>, a Hungarian citizen. In August 2019, I was the victim of a violent attack in Strasbourg, France (Parc de la Citadelle). I suffered severe facial injuries requiring emergency surgery at Hôpital de Hautepierre. The surgery was incomplete, leaving me with ongoing medical complications.</p>
-<p>I have active legal proceedings in multiple jurisdictions:</p>
-<ul>
-<li>ECHR application (Rule 39 urgent interim measures) –  – Case ref. 13844/26 - Case ref. PKKB 16.B.21.716/2018</li>
-<li>Presidential pardon request – VII-LK/206/2/2026</li>
-<li>Hungarian Ombudsman – RI-AJB-106/2026</li>
-<li>EU Ombudsman – 783/2026/CMS</li>
-</ul>
-<p>I face a 42-day imprisonment order with a reporting date of <strong>April 29, 2026</strong>.</p>
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('en')">🇬🇧 English</button>
+  <button class="lang-btn" onclick="setLang('hu')">🇭🇺 Magyar</button>
 </div>
 
-<div class="lang">
-<h2>Magyar</h2>
-<p>Batta Gábor vagyok, magyar állampolgár. 2019 augusztusában erőszakos támadás áldozata lettem Strasbourgban (Parc de la Citadelle). Súlyos arcséréüléseket szenvedtem, amelyek sürgősségi műtétet igényeltek a Hôpital de Hautepierre-ben. A műtét nem volt teljes, tartós egészségügyi szövődményeket hagyva.</p>
-<p>Aktív jogi eljárásaim:</p>
-<ul>
-<li>EJEB kérelem (39. szabály szerinti sürgős ideiglenes intézkedések) – PKKB 16.B.21.716/2018</li>
-<li>Köztársasági elnöki kegyelem – VII-LK/206/2/2026</li>
-<li>Magyar Ombudsman – RI-AJB-106/2026</li>
-<li>EU Ombudsman – 783/2026/CMS</li>
-</ul>
-<p><strong>2026. április 29-én</strong> 42 napos szabadságvesztést kell megjelennem teljesíteni.</p>
+<div class="urgent">
+  <span class="en i">⚠ URGENT: Imprisonment reporting deadline — April 29, 2026 ⚠</span>
+  <span class="hu i">⚠ SÜRGŐS: Börtön-jelentkezési határidő — 2026. április 29. ⚠</span>
 </div>
 
-<h2>Social Media / Közösségi média</h2>
-<ul>
-<li><a href="https://bsky.app/profile/gaborbatta.bsky.social" target="_blank">Bluesky: @gaborbatta.bsky.social</a></li>
-<li><a href="https://mastodon.social/@gaborbatta" target="_blank">Mastodon: @gaborbatta@mastodon.social</a></li>
-<li><a href="https://twitter.com/BattaGabor03" target="_blank">Twitter/X: @BattaGabor03</a></li>
-</ul>
+<div class="masthead">
+  <div class="masthead-label">
+    <span class="en i">Human Rights Documentation</span>
+    <span class="hu i">Emberi Jogi Dokumentáció</span>
+  </div>
+  <h1>
+    <span class="en i">Justice for <span>Gabor Batta</span></span>
+    <span class="hu i">Igazságot <span>Batta Gábornak</span></span>
+  </h1>
+  <div class="masthead-sub">
+    <span class="en i">Violent attack victim. Ignored for 6 years. Facing imprisonment.</span>
+    <span class="hu i">Erőszakos támadás áldozata. 6 évig figyelmen kívül hagyva. Börtönnel fenyegetve.</span>
+  </div>
+</div>
 
-<h2>Contact / Kapcsolat</h2>
-<p>Email: <a href="mailto:gaborbatta.fr@gmail.com">gaborbatta.fr@gmail.com</a></p>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <div class="en">
+        <div class="kicker">The Story</div>
+        <h2>Violent attack victim ignored by French police for 6 years. Now facing imprisonment.</h2>
+        <p>In August 2019, Gabor Batta was brutally attacked in Strasbourg. The attack left him with severe facial injuries requiring emergency surgery.</p>
+        <p>Despite filing a formal complaint, French authorities conducted no meaningful investigation. Six years later the attackers have never been identified.</p>
+      </div>
+      <div class="hu">
+        <div class="kicker">A Történet</div>
+        <h2>Erőszakos támadás áldozatát 6 évig figyelmen kívül hagyta a francia rendőrség. Most börtönnel néz szembe.</h2>
+        <p>2019 augusztusában Batta Gábort három támadó brutálisan megverte Strasbourgban. Súlyos sérüléseket szenvedett, sürgős műtétre volt szükség.</p>
+        <p>A francia hatóságok nem nyomoztak érdemben. Hat év telt el, a támadók még mindig szabadon vannak.</p>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="injury.jpg" alt="Batta Gábor sérülései">
+      <div class="img-caption">Batta Gábor a 2019. augusztusi támadás után</div>
+    </div>
+  </div>
+
+  <!-- CT scans -->
+  <section>
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <h2 class="section-title">CT felvételek</h2>
+    </div>
+    <div class="images-grid">
+      <figure><img src="ct-scan-1.jpeg" alt="CT 1"><figcaption>CT scan 1</figcaption></figure>
+      <figure><img src="ct-scan-2.jpeg" alt="CT 2"><figcaption>CT scan 2</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Suspect images -->
+  <section>
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <h2 class="section-title">Gyanúsítottak fantomképei</h2>
+    </div>
+    <div class="images-grid">
+      <figure><img src="suspect1.jpg" alt="Gyanúsított 1"><figcaption>1. gyanúsított</figcaption></figure>
+      <figure><img src="suspect2.jpg" alt="Gyanúsított 2"><figcaption>2. gyanúsított</figcaption></figure>
+      <figure><img src="suspect3.jpg" alt="Gyanúsított 3"><figcaption>3. gyanúsított</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- How You Can Help -->
+  <section>
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <h2 class="section-title">Hogyan segíthetsz?</h2>
+    </div>
+    <div class="help-options">
+      <a class="help-card" href="https://www.change.org/p/justice-for-gabor-batta-violent-attack-victim-ignored-by-french-police-for-6-years" target="_blank">
+        <div class="hc-label">Petition / Petíció</div>
+        <div class="hc-title">Írd alá a Change.org petíciót</div>
+        <div class="hc-sub">30 másodperc. Minden aláírás számít.</div>
+      </a>
+      <a class="help-card" href="https://twitter.com/BattaGabor03" target="_blank">
+        <div class="hc-label">Twitter / X</div>
+        <div class="hc-title">Kövesd és oszd meg</div>
+        <div class="hc-sub">@BattaGabor03</div>
+      </a>
+      <a class="help-card" href="https://mastodon.social/@gaborbatta" target="_blank">
+        <div class="hc-label">Mastodon</div>
+        <div class="hc-title">Kövesd Mastodonon</div>
+        <div class="hc-sub">@gaborbatta@mastodon.social</div>
+      </a>
+      <a class="help-card" href="https://bsky.app/profile/gaborbatta.bsky.social" target="_blank">
+        <div class="hc-label">Bluesky</div>
+        <div class="hc-title">Kövesd Bluesky-n</div>
+        <div class="hc-sub">@gaborbatta.bsky.social</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <div class="contact-block">
+      <h3>Kapcsolat</h3>
+      <p>
+        <strong>Email:</strong> <a href="mailto:gaborbatta.fr@gmail.com">gaborbatta.fr@gmail.com</a><br><br>
+        Twitter/X: <a href="https://twitter.com/BattaGabor03" target="_blank">@BattaGabor03</a><br>
+        Mastodon: <a href="https://mastodon.social/@gaborbatta" target="_blank">@gaborbatta@mastodon.social</a><br>
+        Bluesky: <a href="https://bsky.app/profile/gaborbatta.bsky.social" target="_blank">@gaborbatta.bsky.social</a>
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<script>
+function setLang(lang) {
+  document.body.classList.remove('lang-en', 'lang-hu');
+  document.body.classList.add('lang-' + lang);
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+}
+</script>
 
 </body>
 </html>
