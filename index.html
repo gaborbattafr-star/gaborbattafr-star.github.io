@@ -103,6 +103,8 @@
 
 <div class="container">
 
+  <!-- A hero, pull-quote, timeline, case-grid, CT-képek, suspect képek stb. részek változatlanul maradnak -->
+
   <div class="hero">
     <div class="hero-text">
       <div class="hu">
@@ -134,7 +136,9 @@
     <span class="en">"Six years passed and no one identified the attackers. Now the victim is being sent to prison."</span>
   </div>
 
-  <!-- A korábbi szekciók változatlanul maradnak (01 Kronologia, 02 Aktiv jogi eljarasok, 03 CT felvételek, 04 Gyanusitottak stb.) -->
+  <!-- Itt jönnek a többi szekciók (Kronológia, Aktív jogi eljárások, CT felvételek, Gyanúsítottak, stb.) – ezeket hagyd meg úgy, ahogy eddig voltak -->
+
+  <!-- A Hogyan segíthetsz? szekció (a korábbi petíció + wordpress linkekkel) -->
 
   <section>
     <div class="section-header">
@@ -145,30 +149,38 @@
       </h2>
     </div>
     <div class="help-options">
-      <!-- Ide kerültek az eredeti help kártyák + az újak -->
-      <!-- ... (az eredeti help kártyák maradnak) ... -->
+      <!-- Ide tedd az eredeti help kártyákat, ha voltak, plusz a petíció és wordpress: -->
 
       <a href="https://www.change.org/p/justice-for-gabor-batta-violent-attack-victim-ignored-by-french-police-for-6-years" class="help-card" target="_blank" rel="noopener">
         <div class="hc-label">CHANGE.ORG PETÍCIÓ</div>
         <div class="hc-title">Aláírás a petícióra</div>
-        <div class="hc-sub">Justice for Gabor Batta – Segíts elérni az igazságot! (Jelenleg 1 aláírás)</div>
+        <div class="hc-sub">Justice for Gabor Batta – Segíts elérni az igazságot!</div>
       </a>
 
       <a href="https://justiceforgaborbatta.wordpress.com/" class="help-card" target="_blank" rel="noopener">
         <div class="hc-label">WORDPRESS BLOG</div>
         <div class="hc-title">Részletes történet</div>
-        <div class="hc-sub">Teljes angol nyelvű beszámoló a támadásról, a 6 évnyi nyomozás hiányáról és az ügyről</div>
+        <div class="hc-sub">Teljes angol nyelvű beszámoló a támadásról és az ügyről</div>
       </a>
     </div>
   </section>
 
-  <!-- A többi rész (contact-block, footer) változatlan -->
-
 </div>
 
+<!-- === NYELVVÁLTÓ JAVASCRIPT (ez volt a hiányzó rész) === -->
 <script>
 function setLang(lang) {
   document.getElementById('body').className = 'body-' + lang;
+  
+  // Aktív gomb kiemelése
+  const buttons = document.querySelectorAll('.lang-btn');
+  buttons.forEach(btn => {
+    if (btn.textContent.toLowerCase() === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
 }
 </script>
 
