@@ -31,14 +31,14 @@
     .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.25rem,3.8vw,2rem);font-weight:700;border-left:5px solid var(--red);padding-left:1.2rem;line-height:1.25;}
     .red {color:var(--red);}
     .blue {color:var(--blue);}
-    .images-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem;margin-top:1.8rem;}
+    .images-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:1.6rem;}
     .images-grid img{width:100%;border:1px solid var(--mid);display:block;}
-    .images-grid figcaption{font-family:'Space Mono',monospace;font-size:0.75rem;color:var(--mid);text-align:center;margin-top:0.6rem;}
-    .analysis{background:#fff9f2;border-left:7px solid var(--blue);padding:2rem 1.8rem;margin:2.2rem 0;}
-    .analysis h4{color:var(--red);margin-bottom:1.2rem;font-size:1.15rem;}
-    .analysis ul{list-style-type:disc;padding-left:1.8rem;}
-    .analysis li{margin-bottom:0.8rem;}
-    .help-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;margin-top:2.2rem;}
+    .images-grid figcaption{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--mid);text-align:center;margin-top:0.5rem;}
+    .analysis{background:#fff9f2;border-left:7px solid var(--blue);padding:2rem 1.8rem;margin:2rem 0;}
+    .analysis h4{color:var(--red);margin-bottom:1rem;font-size:1.15rem;}
+    .analysis ul{list-style-type:disc;padding-left:1.6rem;}
+    .analysis li{margin-bottom:0.7rem;}
+    .help-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;margin-top:2rem;}
     .help-card{background:var(--ink);color:var(--paper);padding:1.8rem;text-decoration:none;display:block;transition:background 0.3s;}
     .help-card:hover{background:var(--red);}
     footer{background:var(--ink);color:rgba(255,255,255,0.55);text-align:center;padding:3.5rem 1rem;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;line-height:2.3;}
@@ -80,16 +80,13 @@
     </div>
   </section>
 
-  <!-- 02. Támadók fantomképei + hivatalos személyleírások -->
+  <!-- 02. Támadók fantomképei + személyleírások -->
   <section>
     <div class="section-header">
       <div class="section-num">02</div>
-      <h2 class="section-title red">A támadók hivatalos személyleírása – Parc de la Citadelle támadás, 2019. augusztus 28., 21:00–22:00</h2>
+      <h2 class="section-title red">A támadók hivatalos személyleírása – Parc de la Citadelle, 2019. augusztus 28.</h2>
     </div>
-
     <div class="images-grid">
-
-      <!-- PERSON 1 -->
       <figure>
         <img src="suspect1.jpg" alt="1. támadó">
         <figcaption class="hu">1. támadó – Fő támadó (fegyverhasználó)</figcaption>
@@ -136,7 +133,6 @@
         </div>
       </figure>
 
-      <!-- PERSON 2 -->
       <figure>
         <img src="suspect2.jpg" alt="2. támadó">
         <figcaption class="hu">2. támadó</figcaption>
@@ -173,7 +169,6 @@
         </div>
       </figure>
 
-      <!-- PERSON 3 -->
       <figure>
         <img src="suspect3.jpg" alt="3. támadó">
         <figcaption class="hu">3. támadó</figcaption>
@@ -210,92 +205,56 @@
         </div>
       </figure>
     </div>
-
-    <!-- Általános megfigyelések -->
-    <div class="analysis">
-      <h4 class="red">Általános megfigyelések / General Observations</h4>
-      <div class="hu">
-        <ul class="blue">
-          <li>A támadás egyértelműen előre megtervezett és szervezett volt</li>
-          <li>A támadók klasszikus elterelő technikát alkalmaztak</li>
-          <li>Az 1. támadó katonai jellegű fegyvert használt, amit hátizsákból vett elő</li>
-          <li>Mindhárom támadó hasonló stílusú ruházatot viselt (bőrdzseki, farmer)</li>
-          <li>A támadás előtt karate-stílusú hangokat és mozdulatokat adtak ki</li>
-          <li>A támadás csak néhány percig tartott</li>
-          <li>A támadók azonnal elmenekültek</li>
-          <li>A fantomképeket FlashFace Premium szoftverrel készítették</li>
-          <li>Kézzel rajzolt vázlatok is rendelkezésre állnak mindhárom támadóról</li>
-        </ul>
-      </div>
-      <div class="en">
-        <ul class="blue">
-          <li>The attack was clearly premeditated and organized</li>
-          <li>The attackers used a classic distraction technique</li>
-          <li>Person 1 used a military-style weapon retrieved from a backpack</li>
-          <li>All three attackers wore similar style clothing (leather jackets, jeans)</li>
-          <li>The attackers made karate-style sounds and movements before the attack</li>
-          <li>The attack lasted only minutes</li>
-          <li>The attackers fled immediately after</li>
-          <li>Professional composite images created with FlashFace Premium software available</li>
-          <li>Hand-drawn sketches of all three attackers available</li>
-        </ul>
-      </div>
-    </div>
   </section>
 
-  <!-- 03. Utólagos arcproblémák -->
+  <!-- 03. CT felvételek + részletes elemzés (több kép egymás mellett) -->
   <section>
     <div class="section-header">
       <div class="section-num">03</div>
-      <h2 class="section-title red">Utólagos arcproblémák és elmaradt kezelések</h2>
+      <h2 class="section-title red">CT felvételek és orvosi bizonyítékok</h2>
+    </div>
+    <div class="images-grid">
+      <figure>
+        <img src="ct-scan-1.jpeg" alt="CT 1">
+        <figcaption class="hu">CT felvétel 1 – Arccsonttörés</figcaption>
+        <figcaption class="en">CT Scan 1 – Facial bone fracture</figcaption>
+      </figure>
+      <figure>
+        <img src="ct-scan-2.jpeg" alt="CT 2">
+        <figcaption class="hu">CT felvétel 2 – Zsírlefolyás a szemüregből az arcüregbe</figcaption>
+        <figcaption class="en">CT Scan 2 – Fat herniation from orbit to maxillary sinus</figcaption>
+      </figure>
+      <figure>
+        <img src="arc-ct-implant.jpg" alt="Arc CT implant">
+        <figcaption class="hu">Arc CT – Implantátum és krónikus gyulladás</figcaption>
+        <figcaption class="en">Facial CT – Implant and chronic inflammation</figcaption>
+      </figure>
     </div>
     <div class="analysis">
-      <h4 class="red">Krónikus következmények</h4>
+      <h4 class="red">Részletes orvosi elemzés</h4>
       <div class="hu">
         <ul class="blue">
-          <li><strong>Fogproblémák:</strong> A támadás során bekövetkezett fogvesztést <span class="red">némileg előzetesen orvosolták a börtönben</span>, de a teljes rehabilitáció elmaradt.</li>
-          <li><strong>Zsírlefolyás:</strong> A második CT felvétel kimutatta a szemüregből az arcüregbe történő zsírlefolyást (orbital fat herniation).</li>
-          <li><strong>Elmaradt második kezelés:</strong> A zsírlefolyás miatt szükséges rekonstrukciós műtét (arcüreg- és szemüreg-átépítés) teljesen elmaradt.</li>
-          <li>Állandó gyulladás, napi fájdalom, látásromlás, PTSD</li>
+          <li>A CT felvételek súlyos arccsonttöréseket és szemüreg-törést mutatnak</li>
+          <li>A második CT egyértelműen kimutatja a zsírlefolyást (orbital fat herniation) a szemüregből az arcüregbe</li>
+          <li>Az implantátum nem megfelelően rögzített, krónikus gyulladást okoz</li>
+          <li>Elmaradt a szükséges második rekonstrukciós műtét</li>
         </ul>
       </div>
       <div class="en">
         <ul class="blue">
-          <li><strong>Dental problems:</strong> Tooth damage was <span class="red">somewhat preliminarily treated in prison</span>, but full rehabilitation was missed.</li>
-          <li><strong>Fat leakage:</strong> Second CT showed fat leakage from orbit to maxillary sinus.</li>
-          <li><strong>Missed second treatment:</strong> Second reconstructive surgery for fat herniation was never performed.</li>
-          <li>Chronic inflammation, daily pain, vision loss, PTSD</li>
+          <li>CT scans show severe facial bone fractures and orbital floor fracture</li>
+          <li>Second CT clearly shows fat herniation from orbit into maxillary sinus</li>
+          <li>Implant is not properly fixed, causing chronic inflammation</li>
+          <li>The required second reconstructive surgery was never performed</li>
         </ul>
       </div>
     </div>
-    <div class="images-grid">
-      <figure><img src="arc-ct-implant.jpg" alt="Implant"><figcaption class="hu">Arc CT – Implantátum és zsírlefolyás</figcaption><figcaption class="en">Facial CT – Implant and fat leakage</figcaption></figure>
-    </div>
   </section>
 
-  <!-- 04. Rivetoile Plaza incidens -->
+  <!-- További dokumentumok (minden kép be van írva) -->
   <section>
     <div class="section-header">
       <div class="section-num">04</div>
-      <h2 class="section-title red">Rivetoile Plaza incidens – Kínzás, rablás és kitoloncolási fogolytábor</h2>
-    </div>
-    <div class="hu">
-      <p class="blue">A Rivetoile bevásárlóközpontban brutálisan megkínoztak, 42 eurómat elvették, majd kb. 8 napig tartottak fogva egy kitoloncolási fogolytáborban. Ez az eset szorosan kapcsolódik a Nancy-i másodfokú fellebbezés ügyéhez.</p>
-    </div>
-    <div class="en">
-      <p class="blue">At Rivetoile Shopping Center I was brutally tortured, my 42 euros were stolen, and I was held for about 8 days in a deportation detention camp. This case is directly linked to the Nancy Court of Appeal proceedings.</p>
-    </div>
-    <div class="images-grid">
-      <figure><img src="rivetoile-1.jpg" alt="Rivetoile 1"><figcaption class="hu">Rivetoile Plaza incidens – 1. fotó</figcaption><figcaption class="en">Rivetoile Plaza incident – Photo 1</figcaption></figure>
-      <figure><img src="rivetoile-2.jpg" alt="Rivetoile 2"><figcaption class="hu">Rivetoile Plaza incidens – 2. fotó</figcaption><figcaption class="en">Rivetoile Plaza incident – Photo 2</figcaption></figure>
-      <figure><img src="rivetoile-3.jpg" alt="Kitoloncolás"><figcaption class="hu">Kitoloncolási fogolytábor</figcaption><figcaption class="en">Deportation detention</figcaption></figure>
-    </div>
-  </section>
-
-  <!-- További dokumentumok (minden kép beleírva) -->
-  <section>
-    <div class="section-header">
-      <div class="section-num">05</div>
       <h2 class="section-title red">Garázdaságos ügy dokumentumai (3 oldal)</h2>
     </div>
     <div class="images-grid">
@@ -307,7 +266,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">06</div>
+      <div class="section-num">05</div>
       <h2 class="section-title red">Permegújítási kérelem – Felfegyverkezett garázdaság (3 oldal)</h2>
     </div>
     <div class="images-grid">
@@ -319,7 +278,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">07</div>
+      <div class="section-num">06</div>
       <h2 class="section-title red">Kegyelmi eljárás – Igazságügyi Minisztérium (4 oldal)</h2>
     </div>
     <div class="images-grid">
@@ -332,7 +291,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">08</div>
+      <div class="section-num">07</div>
       <h2 class="section-title red">Emberi Jogi Biztos dokumentumai (2 oldal)</h2>
     </div>
     <div class="images-grid">
@@ -343,7 +302,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">09</div>
+      <div class="section-num">08</div>
       <h2 class="section-title red">Európai Ombudsman igazoló email (1 dokumentum)</h2>
     </div>
     <div class="images-grid">
@@ -353,7 +312,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">10</div>
+      <div class="section-num">09</div>
       <h2 class="section-title red">Francia másodfokú bírósági határozatok (Nancy) – 4 dokumentum</h2>
     </div>
     <div class="images-grid">
@@ -366,7 +325,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">11</div>
+      <div class="section-num">10</div>
       <h2 class="section-title red">Magyar Ügyészség értesítése a hármas támadó ügyben (1 dokumentum)</h2>
     </div>
     <div class="images-grid">
@@ -376,7 +335,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">12</div>
+      <div class="section-num">11</div>
       <h2 class="section-title red">EJEB Rule 39 – Sürgős intézkedés (2 dokumentum)</h2>
     </div>
     <div class="images-grid">
@@ -387,7 +346,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">13</div>
+      <div class="section-num">12</div>
       <h2 class="section-title red">EU Parlament petíció – Emergency Failure</h2>
     </div>
     <div class="images-grid">
@@ -397,7 +356,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">14</div>
+      <div class="section-num">13</div>
       <h2 class="section-title red">Jogerős végzés – 2025. szeptember 23-24. (2 dokumentum)</h2>
     </div>
     <div class="images-grid">
@@ -408,7 +367,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">15</div>
+      <div class="section-num">14</div>
       <h2 class="section-title red">Sugárzás és drónkövetés dokumentumai (2 dokumentum)</h2>
     </div>
     <div class="images-grid">
@@ -419,7 +378,7 @@
 
   <section>
     <div class="section-header">
-      <div class="section-num">16</div>
+      <div class="section-num">15</div>
       <h2 class="section-title red">Orvosi találkozók elmaradása – Utókezelés (2 dokumentum)</h2>
     </div>
     <div class="images-grid">
@@ -431,7 +390,7 @@
   <!-- Hogyan segíthetsz? -->
   <section>
     <div class="section-header">
-      <div class="section-num">17</div>
+      <div class="section-num">16</div>
       <h2 class="section-title red">Hogyan segíthetsz?</h2>
     </div>
     <div class="help-options">
