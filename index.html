@@ -38,37 +38,19 @@
     .section-num{font-family:'Playfair Display',serif;font-size:3.2rem;font-weight:900;color:var(--light);line-height:1;flex-shrink:0;}
     .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.15rem,3vw,1.65rem);font-weight:700;border-left:3px solid var(--red);padding-left:0.75rem;line-height:1.2;}
     .pull-quote{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:1.5rem 1rem;margin:2rem 0;font-family:'Playfair Display',serif;font-size:clamp(1rem,2.8vw,1.45rem);font-style:italic;color:var(--red);text-align:center;line-height:1.4;}
-    .timeline{margin-top:1.5rem;}
-    .tl-item{display:grid;grid-template-columns:140px 1fr;gap:1.2rem;padding:1rem 0;border-top:1px solid var(--light);}
-    @media(max-width:500px){.tl-item{grid-template-columns:1fr;gap:0.3rem;}}
-    .tl-date{font-family:'Space Mono',monospace;font-size:0.68rem;color:var(--mid);padding-top:0.1rem;}
-    .tl-content strong{font-family:'Playfair Display',serif;font-weight:700;font-size:0.95rem;display:block;margin-bottom:0.2rem;}
-    .tl-content p{font-size:0.88rem;color:#3a3020;}
-    .tl-tag{display:inline-block;font-family:'Space Mono',monospace;font-size:0.55rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.15rem 0.5rem;margin-top:0.35rem;border:1px solid;}
-    .tl-tag.red{color:var(--red);border-color:var(--red);}
-    .tl-tag.gold{color:var(--accent);border-color:var(--accent);}
-    .tl-tag.dark{color:var(--ink);border-color:var(--ink);}
-    .case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.5rem;}
-    .case-card{border:1px solid var(--mid);padding:1.3rem;background:#fff9f2;}
-    .case-card-label{font-family:'Space Mono',monospace;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);margin-bottom:0.5rem;}
-    .case-card-ref{font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;color:var(--red);margin-bottom:0.4rem;word-break:break-all;}
-    .case-card-title{font-family:'Playfair Display',serif;font-weight:700;font-size:0.95rem;margin-bottom:0.4rem;}
-    .case-card p{font-size:0.8rem;color:#3a3020;line-height:1.5;}
-    .images-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:1rem;margin-top:1.5rem;}
-    .images-grid figure{display:flex;flex-direction:column;gap:0.4rem;}
-    .images-grid img{width:100%;border:1px solid var(--mid);display:block;}
-    .images-grid figcaption{font-size:0.68rem;color:var(--mid);font-style:italic;font-family:'Space Mono',monospace;}
+    .statement {background:#fff9f2; border-left:5px solid var(--red); padding:2rem; margin:2rem 0; font-size:0.95rem; line-height:1.75;}
+    .statement h3 {font-family:'Playfair Display',serif; color:var(--red); margin-bottom:1.2rem;}
+    .statement ul {margin:1rem 0; padding-left:1.5rem;}
     .help-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.9rem;margin-top:1.5rem;}
     .help-card{background:var(--ink);color:var(--paper);padding:1.4rem;text-decoration:none;display:block;transition:background 0.2s;}
     .help-card:hover{background:var(--red);}
     .hc-label{font-family:'Space Mono',monospace;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.5rem;opacity:0.65;}
     .hc-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;line-height:1.3;}
     .hc-sub{font-size:0.75rem;margin-top:0.4rem;opacity:0.8;}
-    .contact-block{background:var(--light);border-left:4px solid var(--red);padding:1.5rem;margin-top:1.5rem;font-family:'Space Mono',monospace;font-size:0.75rem;line-height:2;}
-    .contact-block h3{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:0.6rem;}
-    .contact-block a{color:var(--red);text-decoration:none;}
-    footer{background:var(--ink);color:rgba(255,255,255,0.5);text-align:center;padding:2rem 1rem;font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;line-height:2;}
-    footer a{color:rgba(255,255,255,0.7);text-decoration:none;}
+    footer{background:var(--ink);color:rgba(255,255,255,0.5);text-align:center;padding:2.5rem 1rem;font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;line-height:2.2;}
+    footer a{color:rgba(255,255,255,0.8);text-decoration:none;}
+    footer a:hover{color:#fff;}
+    .social-links {margin:1rem 0;}
     .body-en .hu{display:none!important;}
     .body-hu .en{display:none!important;}
   </style>
@@ -103,76 +85,119 @@
 
 <div class="container">
 
-  <!-- A hero, pull-quote, timeline, case-grid, CT-képek, suspect képek stb. részek változatlanul maradnak -->
+  <!-- Hero és korábbi szekciók (01-05) változatlanul maradnak -->
 
-  <div class="hero">
-    <div class="hero-text">
-      <div class="hu">
-        <div class="kicker">A Tortenet</div>
-        <h2>Brutalis tamadas aldozatat 6 evig figyelmen kivul hagyta a francia rendorseg — most borton fenyegeti</h2>
-        <p>2019 augusztusaban Batta Gabort harom ismeretlen elköveto brutálisan megtamadta Strasbourg Parc de la Citadelle parkjaban. Sulyos arccsonttoreseket szenvedett, surgos mutetre szorult a Hopital de Hautepierre korhazban.</p>
-        <p>A francia hatasagok közel hat evig erdemi nyomozast nem folytattak. A tettesek maig azonositatlanok es szabadlabon vannak.</p>
-        <p>Eközben PKKB 16.B.21.716/2018 ugy alapjan 42 napos elzarast rendeltek el ellene — hatarido: <strong>2026. aprilis 29.</strong></p>
-      </div>
-      <div class="en">
-        <div class="kicker">The Story</div>
-        <h2>Violent attack victim ignored by French police for 6 years — now facing imprisonment</h2>
-        <p>In August 2019, Gabor Batta was brutally attacked in Strasbourg's Parc de la Citadelle. He suffered severe facial fractures requiring emergency surgery at Hopital de Hautepierre.</p>
-        <p>Despite filing a formal complaint, French authorities conducted no meaningful investigation for nearly six years. The attackers remain unidentified and at large.</p>
-        <p>Meanwhile, case PKKB 16.B.21.716/2018 resulted in a 42-day imprisonment order — deadline: <strong>April 29, 2026</strong>.</p>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="injury.jpg" alt="Batta Gabor serulesei">
-      <div class="img-caption">
-        <span class="hu">Batta Gabor — Strasbourg, 2019. augusztus</span>
-        <span class="en">Gabor Batta — Strasbourg, August 2019</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="pull-quote">
-    <span class="hu">Hat ev alatt senki nem azonositotta a tetteseket. Most az aldozatot akarjak bortonbe küldeni.</span>
-    <span class="en">"Six years passed and no one identified the attackers. Now the victim is being sent to prison."</span>
-  </div>
-
-  <!-- Itt jönnek a többi szekciók (Kronológia, Aktív jogi eljárások, CT felvételek, Gyanúsítottak, stb.) – ezeket hagyd meg úgy, ahogy eddig voltak -->
-
-  <!-- A Hogyan segíthetsz? szekció (a korábbi petíció + wordpress linkekkel) -->
-
+  <!-- 06. Hivatalos nyilatkozatok és levelek -->
   <section>
     <div class="section-header">
-      <div class="section-num">05</div>
+      <div class="section-num">06</div>
       <h2 class="section-title">
-        <span class="hu">Hogyan segithetsz?</span>
+        <span class="hu">Hivatalos nyilatkozatok és levelek</span>
+        <span class="en">Official Statements & Letters</span>
+      </h2>
+    </div>
+
+    <div class="statement">
+      <h3 class="hu">1. Levél a francia rendőrségnek – Új gyanúsított képek</h3>
+      <h3 class="en">1. Letter to French Police – New suspect images</h3>
+      <p><strong>Subject:</strong> Violent attack 2019 - Parc de la Citadelle Strasbourg - new suspect images</p>
+      <p>Dear Sir/Madam,<br>
+      I am Gabor Batta, born 05/02/1984, Hungarian citizen.<br>
+      On August 28, 2019 I was violently attacked in Parc de la Citadelle, Strasbourg by three persons.<br>
+      Hospital reference: NIP 2200319<br>
+      Please forward to Police Nationale Strasbourg.</p>
+    </div>
+
+    <div class="statement">
+      <h3 class="hu">2. Levél szerkesztőknek – 2026-os frissítés</h3>
+      <h3 class="en">2. Letter to Editors – UPDATE 2026</h3>
+      <p><strong>Subject:</strong> Hungarian man - 6 years of injustice, police corruption, human rights violations - UPDATE 2026</p>
+      <p>Dear Editor/News Team,<br>
+      My name is Gabor Batta, born 5th February 1984, Budapest, Hungary. My mother Katalin Merenyi (born 1952) is also a victim in this case.</p>
+    </div>
+
+    <!-- ÚJ: Részletes orvosi állapot -->
+    <div class="statement">
+      <h3 class="hu">Orvosi állapot – 2026</h3>
+      <h3 class="en">Medical Situation – Gabor Batta (2026)</h3>
+      
+      <p><strong>Current Living Situation:</strong><br>
+      Homeless in Budapest • Mother Katalin (74) has shelter • Daily painkillers • Partial memory loss</p>
+
+      <p><strong>Evidence Available:</strong><br>
+      Three hand drawn suspect sketches • Original injury photographs • Full French hospital medical documents • Two CT scan reports • All court and legal documents • Ombudsman correspondence</p>
+
+      <p><strong>Contact:</strong> gaborbatta.fr@gmail.com</p>
+
+      <h4>INITIAL INJURIES (August 28-29, 2019)</h4>
+      <p>Comminuted fracture of left orbital floor with inferior rectus muscle entrapment, fracture of left internal orbital wall, left nasomaxillary fracture, left zygomatic fracture, frontal sinus fracture, multiple tooth loss, Grade II exophthalmia, initial loss of consciousness, nausea, significant subpalpebral hematoma.</p>
+
+      <h4>EMERGENCY SURGERY (August 29, 2019)</h4>
+      <p>Performed by Dr. Dissaux – reconstruction of left orbital floor and zygoma. Metal plates and screws inserted.</p>
+
+      <h4>CRITICAL SURGICAL FAILURE</h4>
+      <p>Second CT scan showed significant defect in posterior third of orbital floor and prolapsing orbital fat tissue. The surgery was **INCOMPLETE**. Patient discharged semi-blind with unfinished surgery after hospital demanded 3000 euros.</p>
+
+      <h4>LONG TERM CONSEQUENCES (2019–2026)</h4>
+      <ul>
+        <li>Chronic daily pain for 6+ years</li>
+        <li>Daily painkiller dependency</li>
+        <li>Partial memory loss</li>
+        <li>Chronic inflammation of facial area</li>
+        <li>Possible vision deterioration and cancer risk from long-term inflammation</li>
+      </ul>
+
+      <p><strong>Current Medical Situation (2026):</strong> No proper medical follow-up since 2019. Cannot afford specialist treatment. This is subject of current Ombudsman investigation (RI-AJB-106/2026).</p>
+
+      <p><strong>Required Urgent Treatment:</strong> New CT scan, maxillofacial surgical assessment, ophthalmological examination, neurological assessment, dental treatment, psychological support for PTSD.</p>
+
+      <p><strong>Note:</strong> The incomplete surgery and lack of medical care constitutes a serious violation of the patient’s right to adequate healthcare under Article 35 of the EU Charter of Fundamental Rights.</p>
+
+      <p><strong>Phone:</strong> +36 307 119 458 • +33 753 842 995</p>
+      <p><em>Sincerely,<br>Gabor Batta</em></p>
+    </div>
+
+  </section>
+
+  <!-- Hogyan segíthetsz? szekció (petíció + WordPress) -->
+  <section>
+    <div class="section-header">
+      <div class="section-num">07</div>
+      <h2 class="section-title">
+        <span class="hu">Hogyan segíthetsz?</span>
         <span class="en">How Can You Help?</span>
       </h2>
     </div>
     <div class="help-options">
-      <!-- Ide tedd az eredeti help kártyákat, ha voltak, plusz a petíció és wordpress: -->
-
       <a href="https://www.change.org/p/justice-for-gabor-batta-violent-attack-victim-ignored-by-french-police-for-6-years" class="help-card" target="_blank" rel="noopener">
-        <div class="hc-label">CHANGE.ORG PETÍCIÓ</div>
+        <div class="hc-label">CHANGE.ORG</div>
         <div class="hc-title">Aláírás a petícióra</div>
         <div class="hc-sub">Justice for Gabor Batta – Segíts elérni az igazságot!</div>
       </a>
-
       <a href="https://justiceforgaborbatta.wordpress.com/" class="help-card" target="_blank" rel="noopener">
         <div class="hc-label">WORDPRESS BLOG</div>
         <div class="hc-title">Részletes történet</div>
-        <div class="hc-sub">Teljes angol nyelvű beszámoló a támadásról és az ügyről</div>
+        <div class="hc-sub">Teljes angol nyelvű beszámoló</div>
       </a>
     </div>
   </section>
 
 </div>
 
-<!-- === NYELVVÁLTÓ JAVASCRIPT (ez volt a hiányzó rész) === -->
+<footer>
+  <div class="container">
+    <p><strong>Email:</strong> <a href="mailto:gaborbatta.fr@gmail.com">gaborbatta.fr@gmail.com</a></p>
+    <div class="social-links">
+      <a href="https://mastodon.social/@gaborbatta" target="_blank" rel="noopener">🐘 Mastodon (@gaborbatta)</a> • 
+      <a href="https://bsky.app/profile/gaborbatta.bsky.social" target="_blank" rel="noopener">🌥 Bluesky (@gaborbatta.bsky.social)</a>
+    </div>
+    <p>© 2026 Justice for Gabor Batta • gaborbatta.github.io</p>
+  </div>
+</footer>
+
 <script>
 function setLang(lang) {
   document.getElementById('body').className = 'body-' + lang;
-  
-  // Aktív gomb kiemelése
   const buttons = document.querySelectorAll('.lang-btn');
   buttons.forEach(btn => {
     if (btn.textContent.toLowerCase() === lang) {
