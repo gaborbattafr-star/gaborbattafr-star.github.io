@@ -40,7 +40,6 @@
     .pull-quote{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:1.5rem 1rem;margin:2rem 0;font-family:'Playfair Display',serif;font-size:clamp(1rem,2.8vw,1.45rem);font-style:italic;color:var(--red);text-align:center;line-height:1.4;}
     .statement {background:#fff9f2; border-left:5px solid var(--red); padding:2rem; margin:2rem 0; font-size:0.95rem; line-height:1.75;}
     .statement h3 {font-family:'Playfair Display',serif; color:var(--red); margin-bottom:1.2rem;}
-    .statement ul {margin:1rem 0; padding-left:1.5rem;}
     .images-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem;}
     .images-grid img{width:100%;border:1px solid var(--mid);display:block;}
     .images-grid figcaption{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--mid);text-align:center;margin-top:0.4rem;}
@@ -73,3 +72,102 @@
     <span class="hu">Emberi Jogi Dokumentacio</span>
     <span class="en">Human Rights Documentation</span>
   </div>
+  <h1>
+    <span class="hu">Igazsagot <span class="highlight">Batta Gabornak</span></span>
+    <span class="en">Justice for <span class="highlight">Gabor Batta</span></span>
+  </h1>
+  <div class="masthead-sub">
+    <span class="hu">Eroszakos tamadas aldozata · 6 evig figyelmen kivul hagyva · EJEB eljaras folyamatban</span>
+    <span class="en">Violent attack victim · Ignored for 6 years · ECHR proceedings active</span>
+  </div>
+  <div class="masthead-date">2019 – 2026 · gaborbatta.fr@gmail.com</div>
+</div>
+
+<div class="container">
+
+  <!-- 08. Bevonulási határozat -->
+  <section>
+    <div class="section-header">
+      <div class="section-num">08</div>
+      <h2 class="section-title">
+        <span class="hu">Börtönbe vonulási határozat</span>
+        <span class="en">Imprisonment Order</span>
+      </h2>
+    </div>
+    <p class="hu">PKKB 16.B.21.716/2018 számú ügy – 42 napos szabadságvesztés. Bevonulási határidő: 2026. április 29.</p>
+    <p class="en">Case PKKB 16.B.21.716/2018 – 42 days imprisonment. Reporting deadline: April 29, 2026.</p>
+
+    <div class="images-grid">
+      <figure>
+        <img src="court-doc-1.jpg" alt="Bevonulási határozat 1">
+        <figcaption class="hu">Bevonulási határozat – 1. oldal</figcaption>
+        <figcaption class="en">Imprisonment Order – Page 1</figcaption>
+      </figure>
+      <figure>
+        <img src="court-doc-2.jpg" alt="Bevonulási határozat 2">
+        <figcaption class="hu">Bevonulási határozat – 2. oldal</figcaption>
+        <figcaption class="en">Imprisonment Order – Page 2</figcaption>
+      </figure>
+      <figure>
+        <img src="court-doc-3.jpg" alt="Bevonulási határozat 3">
+        <figcaption class="hu">Bevonulási határozat – 3. oldal</figcaption>
+        <figcaption class="en">Imprisonment Order – Page 3</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 09. EJEB Rule 39 -->
+  <section>
+    <div class="section-header">
+      <div class="section-num">09</div>
+      <h2 class="section-title">
+        <span class="hu">EJEB Rule 39 – Sürgős ideiglenes intézkedés</span>
+        <span class="en">ECHR Rule 39 – Urgent Interim Measures</span>
+      </h2>
+    </div>
+    <p class="hu">Sürgős kérelem a börtönbe vonulás felfüggesztésére. 22 melléklettel benyújtva az Európai Emberi Jogi Bírósághoz.</p>
+    <p class="en">Urgent application to suspend the imprisonment order, submitted with 22 attachments to the European Court of Human Rights.</p>
+
+    <div class="images-grid">
+      <figure>
+        <img src="rule39-doc-1.jpg" alt="Rule 39 kérelem 1">
+        <figcaption class="hu">Rule 39 kérelem – 1. dokumentum</figcaption>
+        <figcaption class="en">Rule 39 Application – Document 1</figcaption>
+      </figure>
+      <figure>
+        <img src="rule39-doc-2.jpg" alt="Rule 39 kérelem 2">
+        <figcaption class="hu">Rule 39 kérelem – 2. dokumentum</figcaption>
+        <figcaption class="en">Rule 39 Application – Document 2</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="container">
+    <p><strong>Email:</strong> <a href="mailto:gaborbatta.fr@gmail.com">gaborbatta.fr@gmail.com</a></p>
+    <div class="social-links">
+      <a href="https://mastodon.social/@gaborbatta" target="_blank" rel="noopener">🐘 Mastodon (@gaborbatta)</a> • 
+      <a href="https://bsky.app/profile/gaborbatta.bsky.social" target="_blank" rel="noopener">🌥 Bluesky (@gaborbatta.bsky.social)</a>
+    </div>
+    <p>© 2026 Justice for Gabor Batta • gaborbatta.github.io</p>
+  </div>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.getElementById('body').className = 'body-' + lang;
+  const buttons = document.querySelectorAll('.lang-btn');
+  buttons.forEach(btn => {
+    if (btn.textContent.toLowerCase() === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+</script>
+
+</body>
+</html>
