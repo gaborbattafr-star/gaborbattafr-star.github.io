@@ -22,25 +22,15 @@
     .masthead-label{font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--mid);margin-bottom:0.8rem;}
     .masthead h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,9vw,5rem);font-weight:900;line-height:1.0;}
     .masthead h1 .highlight{color:var(--red);}
-    .masthead-sub{font-family:'Playfair Display',serif;font-size:clamp(0.95rem,2.5vw,1.35rem);font-style:italic;color:var(--mid);margin-top:0.6rem;}
-    .masthead-date{font-family:'Space Mono',monospace;font-size:0.58rem;color:var(--mid);margin-top:0.8rem;border-top:1px solid var(--light);padding-top:0.6rem;}
     .container{max-width:980px;margin:0 auto;padding:0 1.5rem;}
     section{padding:3.2rem 0;border-bottom:1px solid var(--light);}
     .section-header{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2rem;}
     .section-num{font-family:'Playfair Display',serif;font-size:4rem;font-weight:900;color:var(--light);line-height:1;flex-shrink:0;}
     .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.25rem,3.8vw,2rem);font-weight:700;border-left:5px solid var(--red);padding-left:1.2rem;line-height:1.25;}
     .red {color:var(--red);}
-    .blue {color:var(--blue);}
     .images-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:1.6rem;}
     .images-grid img{width:100%;border:1px solid var(--mid);display:block;}
     .images-grid figcaption{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--mid);text-align:center;margin-top:0.5rem;}
-    .analysis{background:#fff9f2;border-left:7px solid var(--blue);padding:2rem 1.8rem;margin:2rem 0;}
-    .analysis h4{color:var(--red);margin-bottom:1rem;font-size:1.15rem;}
-    .analysis ul{list-style-type:disc;padding-left:1.6rem;}
-    .analysis li{margin-bottom:0.7rem;}
-    .help-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;margin-top:2rem;}
-    .help-card{background:var(--ink);color:var(--paper);padding:1.8rem;text-decoration:none;display:block;transition:background 0.3s;}
-    .help-card:hover{background:var(--red);}
     footer{background:var(--ink);color:rgba(255,255,255,0.55);text-align:center;padding:3.5rem 1rem;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;line-height:2.3;}
     footer a{color:rgba(255,255,255,0.85);text-decoration:none;}
     .body-en .hu{display:none!important;}
@@ -68,43 +58,30 @@
 
   <!-- 01. Fő támadás története -->
   <section>
-    <div class="section-header">
-      <div class="section-num">01</div>
-      <h2 class="section-title red">A 2019-es strasbourgi támadás részletes története</h2>
-    </div>
-    <div class="hu">
-      <p class="blue">2019. augusztus 28-án este 21:00–22:00 között, Strasbourg Parc de la Citadelle parkjában három támadó lesből támadt rám és édesanyámra. Eurolines busszal érkeztünk Münchenből. A támadás előre megtervezett volt.</p>
-    </div>
-    <div class="en">
-      <p class="blue">On 28 August 2019 between 21:00–22:00, in Strasbourg Parc de la Citadelle, three attackers ambushed me and my mother. We arrived by Eurolines bus from Munich. The attack was clearly premeditated.</p>
-    </div>
+    <div class="section-header"><div class="section-num">01</div><h2 class="section-title red">A 2019-es strasbourgi támadás részletes története</h2></div>
+    <div class="hu"><p class="blue">2019. augusztus 28-án este 21:00–22:00 között, Strasbourg Parc de la Citadelle parkjában három támadó lesből támadt rám és édesanyámra.</p></div>
+    <div class="en"><p class="blue">On 28 August 2019 between 21:00–22:00, in Strasbourg Parc de la Citadelle, three attackers ambushed me and my mother.</p></div>
     <div class="images-grid">
-      <figure><img src="injury.jpg" alt="Brutális támadás utáni sérülés"><figcaption class="hu">Brutális támadás utáni sérülés – 2019. augusztus</figcaption><figcaption class="en">Injury after the brutal attack – August 2019</figcaption></figure>
-      <figure><img src="ct-scan-1.jpeg" alt="CT 1"><figcaption class="hu">CT felvétel 1 – Arccsonttörés</figcaption><figcaption class="en">CT Scan 1 – Facial bone fracture</figcaption></figure>
-      <figure><img src="ct-scan-2.jpeg" alt="CT 2"><figcaption class="hu">CT felvétel 2 – Zsírlefolyás a szemüregből</figcaption><figcaption class="en">CT Scan 2 – Fat herniation from orbit</figcaption></figure>
-      <figure><img src="arc-ct-implant.jpg" alt="Arc CT implant"><figcaption class="hu">Arc CT – Implantátum problémája</figcaption><figcaption class="en">Facial CT – Implant issue</figcaption></figure>
+      <figure><img src="injury.jpg" alt="Sérülés"><figcaption class="hu">Sérülés</figcaption><figcaption class="en">Injury</figcaption></figure>
+      <figure><img src="ct-scan-1.jpeg" alt="CT1"><figcaption>CT 1</figcaption></figure>
+      <figure><img src="ct-scan-2.jpeg" alt="CT2"><figcaption>CT 2</figcaption></figure>
+      <figure><img src="arc-ct-implant.jpg" alt="Implant"><figcaption>Arc CT</figcaption></figure>
     </div>
   </section>
 
-  <!-- 02. Támadók fantomképei -->
+  <!-- 02. Támadók -->
   <section>
-    <div class="section-header">
-      <div class="section-num">02</div>
-      <h2 class="section-title red">A támadók hivatalos személyleírása – Parc de la Citadelle, 2019. augusztus 28.</h2>
-    </div>
+    <div class="section-header"><div class="section-num">02</div><h2 class="section-title red">A támadók hivatalos személyleírása</h2></div>
     <div class="images-grid">
-      <figure><img src="suspect1.jpg" alt="1. támadó"><figcaption class="hu">1. támadó – Fő támadó (fegyverhasználó)</figcaption><figcaption class="en">Suspect 1 – Main Attacker (weapon user)</figcaption></figure>
-      <figure><img src="suspect2.jpg" alt="2. támadó"><figcaption class="hu">2. támadó</figcaption><figcaption class="en">Suspect 2</figcaption></figure>
-      <figure><img src="suspect3.jpg" alt="3. támadó"><figcaption class="hu">3. támadó</figcaption><figcaption class="en">Suspect 3</figcaption></figure>
+      <figure><img src="suspect1.jpg" alt="1"><figcaption>1. támadó</figcaption></figure>
+      <figure><img src="suspect2.jpg" alt="2"><figcaption>2. támadó</figcaption></figure>
+      <figure><img src="suspect3.jpg" alt="3"><figcaption>3. támadó</figcaption></figure>
     </div>
   </section>
 
   <!-- 03. Garázdaságos ügy -->
   <section>
-    <div class="section-header">
-      <div class="section-num">03</div>
-      <h2 class="section-title red">Garázdaságos ügy dokumentumai (3 oldal)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">03</div><h2 class="section-title red">Garázdaságos ügy dokumentumai (3 oldal)</h2></div>
     <div class="images-grid">
       <figure><img src="garazdasag-1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
       <figure><img src="garazdasag-2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
@@ -112,12 +89,9 @@
     </div>
   </section>
 
-  <!-- 04. Permegújítási kérelem -->
+  <!-- 04. Permegújítás -->
   <section>
-    <div class="section-header">
-      <div class="section-num">04</div>
-      <h2 class="section-title red">Permegújítási kérelem – Felfegyverkezett garázdaság (3 oldal)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">04</div><h2 class="section-title red">Permegújítási kérelem (3 oldal)</h2></div>
     <div class="images-grid">
       <figure><img src="permegujitas-1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
       <figure><img src="permegujitas-2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
@@ -127,10 +101,7 @@
 
   <!-- 05. Kegyelmi eljárás -->
   <section>
-    <div class="section-header">
-      <div class="section-num">05</div>
-      <h2 class="section-title red">Kegyelmi eljárás – Igazságügyi Minisztérium (4 oldal)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">05</div><h2 class="section-title red">Kegyelmi eljárás (4 oldal)</h2></div>
     <div class="images-grid">
       <figure><img src="kegyelmi-1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
       <figure><img src="kegyelmi-2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
@@ -139,35 +110,26 @@
     </div>
   </section>
 
-  <!-- 06. Emberi Jogi Biztos -->
+  <!-- 06. Ombudsman -->
   <section>
-    <div class="section-header">
-      <div class="section-num">06</div>
-      <h2 class="section-title red">Emberi Jogi Biztos dokumentumai (2 oldal)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">06</div><h2 class="section-title red">Emberi Jogi Biztos (2 oldal)</h2></div>
     <div class="images-grid">
       <figure><img src="ombudsman-1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
       <figure><img src="ombudsman-2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
     </div>
   </section>
 
-  <!-- 07. Európai Ombudsman -->
+  <!-- 07. EU Ombudsman -->
   <section>
-    <div class="section-header">
-      <div class="section-num">07</div>
-      <h2 class="section-title red">Európai Ombudsman igazoló email (1 dokumentum)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">07</div><h2 class="section-title red">Európai Ombudsman (1 dokumentum)</h2></div>
     <div class="images-grid">
-      <figure><img src="eu-ombudsman-email.jpg" alt="Email"><figcaption class="hu">Európai Ombudsman igazoló email</figcaption><figcaption class="en">European Ombudsman confirmation email</figcaption></figure>
+      <figure><img src="eu-ombudsman-email.jpg" alt="Email"><figcaption>E-mail</figcaption></figure>
     </div>
   </section>
 
-  <!-- 08. Francia bírósági határozatok -->
+  <!-- 08. Francia bíróság -->
   <section>
-    <div class="section-header">
-      <div class="section-num">08</div>
-      <h2 class="section-title red">Francia másodfokú bírósági határozatok (Nancy) – 4 dokumentum</h2>
-    </div>
+    <div class="section-header"><div class="section-num">08</div><h2 class="section-title red">Francia bírósági határozatok (4 oldal)</h2></div>
     <div class="images-grid">
       <figure><img src="francia-birosag-1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
       <figure><img src="francia-birosag-2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
@@ -178,111 +140,84 @@
 
   <!-- 09. Magyar Ügyészség -->
   <section>
-    <div class="section-header">
-      <div class="section-num">09</div>
-      <h2 class="section-title red">Magyar Ügyészség értesítése a hármas támadó ügyben (1 dokumentum)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">09</div><h2 class="section-title red">Magyar Ügyészség értesítése</h2></div>
     <div class="images-grid">
-      <figure><img src="ugyeszeg-ertesites.jpg" alt="Ügyészség"><figcaption class="hu">Ügyészségi értesítés</figcaption><figcaption class="en">Prosecutor notification</figcaption></figure>
+      <figure><img src="ugyeszeg-ertesites.jpg" alt="Ügyészség"><figcaption>Értesítés</figcaption></figure>
     </div>
   </section>
 
   <!-- 10. EJEB Rule 39 -->
   <section>
-    <div class="section-header">
-      <div class="section-num">10</div>
-      <h2 class="section-title red">EJEB Rule 39 – Sürgős intézkedés (2 dokumentum)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">10</div><h2 class="section-title red">EJEB Rule 39 (2 dokumentum)</h2></div>
     <div class="images-grid">
       <figure><img src="rule39-doc-1.jpg" alt="1"><figcaption>1. dokumentum</figcaption></figure>
       <figure><img src="rule39-doc-2.jpg" alt="2"><figcaption>2. dokumentum</figcaption></figure>
     </div>
   </section>
 
-  <!-- 11. EU Parlament petíció -->
+  <!-- 11. EU petíció -->
   <section>
-    <div class="section-header">
-      <div class="section-num">11</div>
-      <h2 class="section-title red">EU Parlament petíció – Emergency Failure</h2>
-    </div>
+    <div class="section-header"><div class="section-num">11</div><h2 class="section-title red">EU Parlament petíció</h2></div>
     <div class="images-grid">
-      <figure><img src="eu-peticio-emergency-failure.jpg" alt="Petíció"><figcaption class="hu">EU Parlament petíció</figcaption><figcaption class="en">EU Parliament Petition</figcaption></figure>
+      <figure><img src="eu-peticio-emergency-failure.jpg" alt="Petíció"><figcaption>Petíció</figcaption></figure>
     </div>
   </section>
 
   <!-- 12. Jogerős végzés -->
   <section>
-    <div class="section-header">
-      <div class="section-num">12</div>
-      <h2 class="section-title red">Jogerős végzés – 2025. szeptember 23-24. (2 dokumentum)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">12</div><h2 class="section-title red">Jogerős végzés (2 oldal)</h2></div>
     <div class="images-grid">
       <figure><img src="jogeros-vegzes-1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
       <figure><img src="jogeros-vegzes-2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
     </div>
   </section>
 
-  <!-- 13. Sugárzás és drónkövetés -->
+  <!-- 13. Sugárzás és drón -->
   <section>
-    <div class="section-header">
-      <div class="section-num">13</div>
-      <h2 class="section-title red">Sugárzás és drónkövetés dokumentumai (2 dokumentum)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">13</div><h2 class="section-title red">Sugárzás és drónkövetés (2 dokumentum)</h2></div>
     <div class="images-grid">
-      <figure><img src="sugarmazas-1.jpg" alt="Sugárzás"><figcaption class="hu">Sugárzás dokumentum</figcaption><figcaption class="en">Radiation document</figcaption></figure>
-      <figure><img src="dronkovetes-1.jpg" alt="Drón"><figcaption class="hu">Drónkövetés dokumentum</figcaption><figcaption class="en">Drone surveillance document</figcaption></figure>
+      <figure><img src="sugarmazas-1.jpg" alt="Sugárzás"><figcaption>Sugárzás</figcaption></figure>
+      <figure><img src="dronkovetes-1.jpg" alt="Drón"><figcaption>Drónkövetés</figcaption></figure>
     </div>
   </section>
 
   <!-- 14. Orvosi találkozók -->
   <section>
-    <div class="section-header">
-      <div class="section-num">14</div>
-      <h2 class="section-title red">Orvosi találkozók elmaradása – Utókezelés (2 dokumentum)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">14</div><h2 class="section-title red">Orvosi találkozók elmaradása (2 dokumentum)</h2></div>
     <div class="images-grid">
-      <figure><img src="orvositalalkozo-elozetes.jpg" alt="Előzetes"><figcaption class="hu">Előzetes konzultáció – elmaradt</figcaption><figcaption class="en">Preliminary consultation – missed</figcaption></figure>
-      <figure><img src="arcimplantatum-elokeszites.jpg" alt="Implant"><figcaption class="hu">Arcimplantátum kezelés előkészítése</figcaption><figcaption class="en">Facial implant treatment preparation</figcaption></figure>
+      <figure><img src="orvositalalkozo-elozetes.jpg" alt="Előzetes"><figcaption>Előzetes</figcaption></figure>
+      <figure><img src="arcimplantatum-elokeszites.jpg" alt="Implant"><figcaption>Implantátum</figcaption></figure>
     </div>
   </section>
 
-  <!-- 15. KFKI dokumentumok -->
+  <!-- 15. KFKI -->
   <section>
-    <div class="section-header">
-      <div class="section-num">15</div>
-      <h2 class="section-title red">KFKI dokumentumok (7 oldal)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">15</div><h2 class="section-title red">KFKI dokumentumok (7 oldal)</h2></div>
     <div class="images-grid">
-      <figure><img src="kfki-doc1.jpg" alt="KFKI 1"><figcaption class="hu">1. oldal</figcaption><figcaption class="en">Page 1</figcaption></figure>
-      <figure><img src="kfki-doc2.jpg" alt="KFKI 2"><figcaption class="hu">2. oldal</figcaption><figcaption class="en">Page 2</figcaption></figure>
-      <figure><img src="kfki-doc3.jpg" alt="KFKI 3"><figcaption class="hu">3. oldal</figcaption><figcaption class="en">Page 3</figcaption></figure>
-      <figure><img src="kfki-doc4.jpg" alt="KFKI 4"><figcaption class="hu">4. oldal</figcaption><figcaption class="en">Page 4</figcaption></figure>
-      <figure><img src="kfki-doc5.jpg" alt="KFKI 5"><figcaption class="hu">5. oldal</figcaption><figcaption class="en">Page 5</figcaption></figure>
-      <figure><img src="kfki-doc6.jpg" alt="KFKI 6"><figcaption class="hu">6. oldal</figcaption><figcaption class="en">Page 6</figcaption></figure>
-      <figure><img src="kfki-doc7.jpg" alt="KFKI 7"><figcaption class="hu">7. oldal</figcaption><figcaption class="en">Page 7</figcaption></figure>
+      <figure><img src="kfki-doc1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
+      <figure><img src="kfki-doc2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
+      <figure><img src="kfki-doc3.jpg" alt="3"><figcaption>3. oldal</figcaption></figure>
+      <figure><img src="kfki-doc4.jpg" alt="4"><figcaption>4. oldal</figcaption></figure>
+      <figure><img src="kfki-doc5.jpg" alt="5"><figcaption>5. oldal</figcaption></figure>
+      <figure><img src="kfki-doc6.jpg" alt="6"><figcaption>6. oldal</figcaption></figure>
+      <figure><img src="kfki-doc7.jpg" alt="7"><figcaption>7. oldal</figcaption></figure>
     </div>
   </section>
 
-  <!-- 16. Számlakimutatások -->
+  <!-- 16. Számlák -->
   <section>
-    <div class="section-header">
-      <div class="section-num">16</div>
-      <h2 class="section-title red">Számlakimutatások dokumentumok (4 oldal)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">16</div><h2 class="section-title red">Számlakimutatások (4 oldal)</h2></div>
     <div class="images-grid">
-      <figure><img src="szamla-doc1.jpg" alt="Számla 1"><figcaption class="hu">1. oldal</figcaption><figcaption class="en">Page 1</figcaption></figure>
-      <figure><img src="szamla-doc2.jpg" alt="Számla 2"><figcaption class="hu">2. oldal</figcaption><figcaption class="en">Page 2</figcaption></figure>
-      <figure><img src="szamla-doc3.jpg" alt="Számla 3"><figcaption class="hu">3. oldal</figcaption><figcaption class="en">Page 3</figcaption></figure>
-      <figure><img src="szamla-doc4.jpg" alt="Számla 4"><figcaption class="hu">4. oldal</figcaption><figcaption class="en">Page 4</figcaption></figure>
+      <figure><img src="szamla-doc1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
+      <figure><img src="szamla-doc2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
+      <figure><img src="szamla-doc3.jpg" alt="3"><figcaption>3. oldal</figcaption></figure>
+      <figure><img src="szamla-doc4.jpg" alt="4"><figcaption>4. oldal</figcaption></figure>
     </div>
   </section>
 
-  <!-- 17. Hogyan segíthetsz? -->
+  <!-- 17. Segítség -->
   <section>
-    <div class="section-header">
-      <div class="section-num">17</div>
-      <h2 class="section-title red">Hogyan segíthetsz?</h2>
-    </div>
+    <div class="section-header"><div class="section-num">17</div><h2 class="section-title red">Hogyan segíthetsz?</h2></div>
     <div class="help-options">
       <a href="https://www.change.org/p/justice-for-gabor-batta-violent-attack-victim-ignored-by-french-police-for-6-years" class="help-card" target="_blank" rel="noopener">
         <div class="hc-label">CHANGE.ORG</div>
@@ -295,98 +230,111 @@
     </div>
   </section>
 
-  <!-- 18. Francia letartóztatás és rendőri intézkedés -->
+  <!-- 18. Francia letartóztatás -->
   <section>
-    <div class="section-header">
-      <div class="section-num">18</div>
-      <h2 class="section-title red">Francia letartóztatás és rendőri intézkedés dokumentumai (26 oldal)</h2>
-    </div>
+    <div class="section-header"><div class="section-num">18</div><h2 class="section-title red">Francia letartóztatás és rendőri intézkedés (26 oldal)</h2></div>
     <p style="color:#c0392b; font-weight:bold; margin:1.5rem 0; padding:1.2rem; background:#fff9f2; border-left:6px solid #c0392b; line-height:1.6;">
       <strong>Megjegyzés:</strong> Ebben a szekcióban a dokumentumok <strong>nem teljesek</strong>, mert a francia rendőrség <strong>nem adta át</strong> őket. Hiányzik a letartóztatás pontos indoka és több kapcsolódó irat.
     </p>
     <div class="images-grid">
-      <figure><img src="french_arrest_doc1.jpg" alt="Letartóztatás 1"><figcaption class="hu">1. oldal</figcaption><figcaption class="en">Page 1</figcaption></figure>
-      <figure><img src="french_arrest_doc2.jpg" alt="Letartóztatás 2"><figcaption class="hu">2. oldal</figcaption><figcaption class="en">Page 2</figcaption></figure>
-      <figure><img src="french_arrest_doc3.jpg" alt="Letartóztatás 3"><figcaption class="hu">3. oldal</figcaption><figcaption class="en">Page 3</figcaption></figure>
-      <figure><img src="french_arrest_doc4.jpg" alt="Letartóztatás 4"><figcaption class="hu">4. oldal</figcaption><figcaption class="en">Page 4</figcaption></figure>
-      <figure><img src="french_arrest_doc5.jpg" alt="Letartóztatás 5"><figcaption class="hu">5. oldal</figcaption><figcaption class="en">Page 5</figcaption></figure>
-      <figure><img src="french_arrest_doc6.jpg" alt="Letartóztatás 6"><figcaption class="hu">6. oldal</figcaption><figcaption class="en">Page 6</figcaption></figure>
-      <figure><img src="french_arrest_doc7.jpg" alt="Letartóztatás 7"><figcaption class="hu">7. oldal</figcaption><figcaption class="en">Page 7</figcaption></figure>
-      <figure><img src="french_arrest_doc8.jpg" alt="Letartóztatás 8"><figcaption class="hu">8. oldal</figcaption><figcaption class="en">Page 8</figcaption></figure>
-      <figure><img src="french_arrest_doc9.jpg" alt="Letartóztatás 9"><figcaption class="hu">9. oldal</figcaption><figcaption class="en">Page 9</figcaption></figure>
-      <figure><img src="french_arrest_doc10.jpg" alt="Letartóztatás 10"><figcaption class="hu">10. oldal</figcaption><figcaption class="en">Page 10</figcaption></figure>
-      <figure><img src="french_arrest_doc11.jpg" alt="Letartóztatás 11"><figcaption class="hu">11. oldal</figcaption><figcaption class="en">Page 11</figcaption></figure>
-      <figure><img src="french_arrest_doc12.jpg" alt="Letartóztatás 12"><figcaption class="hu">12. oldal</figcaption><figcaption class="en">Page 12</figcaption></figure>
-      <figure><img src="french_arrest_doc13.jpg" alt="Letartóztatás 13"><figcaption class="hu">13. oldal</figcaption><figcaption class="en">Page 13</figcaption></figure>
-      <figure><img src="french_arrest_doc14.jpg" alt="Letartóztatás 14"><figcaption class="hu">14. oldal</figcaption><figcaption class="en">Page 14</figcaption></figure>
-      <figure><img src="french_arrest_doc15.jpg" alt="Letartóztatás 15"><figcaption class="hu">15. oldal</figcaption><figcaption class="en">Page 15</figcaption></figure>
-      <figure><img src="french_arrest_doc16.jpg" alt="Letartóztatás 16"><figcaption class="hu">16. oldal</figcaption><figcaption class="en">Page 16</figcaption></figure>
-      <figure><img src="french_arrest_doc17.jpg" alt="Letartóztatás 17"><figcaption class="hu">17. oldal</figcaption><figcaption class="en">Page 17</figcaption></figure>
-      <figure><img src="french_arrest_doc18.jpg" alt="Letartóztatás 18"><figcaption class="hu">18. oldal</figcaption><figcaption class="en">Page 18</figcaption></figure>
-      <figure><img src="french_arrest_doc19.jpg" alt="Letartóztatás 19"><figcaption class="hu">19. oldal</figcaption><figcaption class="en">Page 19</figcaption></figure>
-      <figure><img src="french_arrest_doc20.jpg" alt="Letartóztatás 20"><figcaption class="hu">20. oldal</figcaption><figcaption class="en">Page 20</figcaption></figure>
-      <figure><img src="french_arrest_doc21.jpg" alt="Letartóztatás 21"><figcaption class="hu">21. oldal</figcaption><figcaption class="en">Page 21</figcaption></figure>
-      <figure><img src="french_arrest_doc22.jpg" alt="Letartóztatás 22"><figcaption class="hu">22. oldal</figcaption><figcaption class="en">Page 22</figcaption></figure>
-      <figure><img src="french_arrest_doc23.jpg" alt="Letartóztatás 23"><figcaption class="hu">23. oldal</figcaption><figcaption class="en">Page 23</figcaption></figure>
-      <figure><img src="french_arrest_doc24.jpg" alt="Letartóztatás 24"><figcaption class="hu">24. oldal</figcaption><figcaption class="en">Page 24</figcaption></figure>
-      <figure><img src="french_arrest_doc25.jpg" alt="Letartóztatás 25"><figcaption class="hu">25. oldal</figcaption><figcaption class="en">Page 25</figcaption></figure>
-      <figure><img src="french_arrest_doc26.jpg" alt="Letartóztatás 26"><figcaption class="hu">26. oldal</figcaption><figcaption class="en">Page 26</figcaption></figure>
+      <figure><img src="french_arrest_doc1.jpg" alt="1"><figcaption>1. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc2.jpg" alt="2"><figcaption>2. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc3.jpg" alt="3"><figcaption>3. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc4.jpg" alt="4"><figcaption>4. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc5.jpg" alt="5"><figcaption>5. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc6.jpg" alt="6"><figcaption>6. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc7.jpg" alt="7"><figcaption>7. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc8.jpg" alt="8"><figcaption>8. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc9.jpg" alt="9"><figcaption>9. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc10.jpg" alt="10"><figcaption>10. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc11.jpg" alt="11"><figcaption>11. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc12.jpg" alt="12"><figcaption>12. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc13.jpg" alt="13"><figcaption>13. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc14.jpg" alt="14"><figcaption>14. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc15.jpg" alt="15"><figcaption>15. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc16.jpg" alt="16"><figcaption>16. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc17.jpg" alt="17"><figcaption>17. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc18.jpg" alt="18"><figcaption>18. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc19.jpg" alt="19"><figcaption>19. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc20.jpg" alt="20"><figcaption>20. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc21.jpg" alt="21"><figcaption>21. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc22.jpg" alt="22"><figcaption>22. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc23.jpg" alt="23"><figcaption>23. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc24.jpg" alt="24"><figcaption>24. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc25.jpg" alt="25"><figcaption>25. oldal</figcaption></figure>
+      <figure><img src="french_arrest_doc26.jpg" alt="26"><figcaption>26. oldal</figcaption></figure>
     </div>
   </section>
 
-  <!-- 19. Szeptember 23-24. Budapest visszatérés Franciaországból -->
+  <!-- 19. Szeptember 23-24. Budapest visszatérés -->
+  <section>
+    <div class="section-header"><div class="section-num">19</div><h2 class="section-title red">Szeptember 23-24. Budapest visszatérés Franciaországból (46 oldal)</h2></div>
+    <div class="images-grid">
+      <figure><img src="french-doc-28.jpg" alt="28"><figcaption class="hu">28. oldal</figcaption><figcaption class="en">Page 28</figcaption></figure>
+      <figure><img src="french-doc-29.jpg" alt="29"><figcaption class="hu">29. oldal</figcaption><figcaption class="en">Page 29</figcaption></figure>
+      <figure><img src="french-doc-30.jpg" alt="30"><figcaption class="hu">30. oldal</figcaption><figcaption class="en">Page 30</figcaption></figure>
+      <figure><img src="french-doc-31.jpg" alt="31"><figcaption class="hu">31. oldal</figcaption><figcaption class="en">Page 31</figcaption></figure>
+      <figure><img src="french-doc-32.jpg" alt="32"><figcaption class="hu">32. oldal</figcaption><figcaption class="en">Page 32</figcaption></figure>
+      <figure><img src="french-doc-33.jpg" alt="33"><figcaption class="hu">33. oldal</figcaption><figcaption class="en">Page 33</figcaption></figure>
+      <figure><img src="french-doc-34.jpg" alt="34"><figcaption class="hu">34. oldal</figcaption><figcaption class="en">Page 34</figcaption></figure>
+      <figure><img src="french-doc-35.jpg" alt="35"><figcaption class="hu">35. oldal</figcaption><figcaption class="en">Page 35</figcaption></figure>
+      <figure><img src="french-doc-36.jpg" alt="36"><figcaption class="hu">36. oldal</figcaption><figcaption class="en">Page 36</figcaption></figure>
+      <figure><img src="french-doc-37.jpg" alt="37"><figcaption class="hu">37. oldal</figcaption><figcaption class="en">Page 37</figcaption></figure>
+      <figure><img src="french-doc-38.jpg" alt="38"><figcaption class="hu">38. oldal</figcaption><figcaption class="en">Page 38</figcaption></figure>
+      <figure><img src="french-doc-39.jpg" alt="39"><figcaption class="hu">39. oldal</figcaption><figcaption class="en">Page 39</figcaption></figure>
+      <figure><img src="french-doc-40.jpg" alt="40"><figcaption class="hu">40. oldal</figcaption><figcaption class="en">Page 40</figcaption></figure>
+      <figure><img src="french-doc-41.jpg" alt="41"><figcaption class="hu">41. oldal</figcaption><figcaption class="en">Page 41</figcaption></figure>
+      <figure><img src="french-doc-42.jpg" alt="42"><figcaption class="hu">42. oldal</figcaption><figcaption class="en">Page 42</figcaption></figure>
+      <figure><img src="french-doc-43.jpg" alt="43"><figcaption class="hu">43. oldal</figcaption><figcaption class="en">Page 43</figcaption></figure>
+      <figure><img src="french-doc-44.jpg" alt="44"><figcaption class="hu">44. oldal</figcaption><figcaption class="en">Page 44</figcaption></figure>
+      <figure><img src="french-doc-45.jpg" alt="45"><figcaption class="hu">45. oldal</figcaption><figcaption class="en">Page 45</figcaption></figure>
+      <figure><img src="french-doc-46.jpg" alt="46"><figcaption class="hu">46. oldal</figcaption><figcaption class="en">Page 46</figcaption></figure>
+      <figure><img src="french-doc-47.jpg" alt="47"><figcaption class="hu">47. oldal</figcaption><figcaption class="en">Page 47</figcaption></figure>
+      <figure><img src="french-doc-48.jpg" alt="48"><figcaption class="hu">48. oldal</figcaption><figcaption class="en">Page 48</figcaption></figure>
+      <figure><img src="french-doc-49.jpg" alt="49"><figcaption class="hu">49. oldal</figcaption><figcaption class="en">Page 49</figcaption></figure>
+      <figure><img src="french-doc-50.jpg" alt="50"><figcaption class="hu">50. oldal</figcaption><figcaption class="en">Page 50</figcaption></figure>
+      <figure><img src="french-doc-51.jpg" alt="51"><figcaption class="hu">51. oldal</figcaption><figcaption class="en">Page 51</figcaption></figure>
+      <figure><img src="french-doc-52.jpg" alt="52"><figcaption class="hu">52. oldal</figcaption><figcaption class="en">Page 52</figcaption></figure>
+      <figure><img src="french-doc-53.jpg" alt="53"><figcaption class="hu">53. oldal</figcaption><figcaption class="en">Page 53</figcaption></figure>
+      <figure><img src="french-doc-54.jpg" alt="54"><figcaption class="hu">54. oldal</figcaption><figcaption class="en">Page 54</figcaption></figure>
+      <figure><img src="french-doc-55.jpg" alt="55"><figcaption class="hu">55. oldal</figcaption><figcaption class="en">Page 55</figcaption></figure>
+      <figure><img src="french-doc-56.jpg" alt="56"><figcaption class="hu">56. oldal</figcaption><figcaption class="en">Page 56</figcaption></figure>
+      <figure><img src="french-doc-57.jpg" alt="57"><figcaption class="hu">57. oldal</figcaption><figcaption class="en">Page 57</figcaption></figure>
+      <figure><img src="french-doc-58.jpg" alt="58"><figcaption class="hu">58. oldal</figcaption><figcaption class="en">Page 58</figcaption></figure>
+      <figure><img src="french-doc-59.jpg" alt="59"><figcaption class="hu">59. oldal</figcaption><figcaption class="en">Page 59</figcaption></figure>
+      <figure><img src="french-doc-60.jpg" alt="60"><figcaption class="hu">60. oldal</figcaption><figcaption class="en">Page 60</figcaption></figure>
+      <figure><img src="french-doc-61.jpg" alt="61"><figcaption class="hu">61. oldal</figcaption><figcaption class="en">Page 61</figcaption></figure>
+      <figure><img src="french-doc-62.jpg" alt="62"><figcaption class="hu">62. oldal</figcaption><figcaption class="en">Page 62</figcaption></figure>
+      <figure><img src="french-doc-63.jpg" alt="63"><figcaption class="hu">63. oldal</figcaption><figcaption class="en">Page 63</figcaption></figure>
+      <figure><img src="french-doc-64.jpg" alt="64"><figcaption class="hu">64. oldal</figcaption><figcaption class="en">Page 64</figcaption></figure>
+      <figure><img src="french-doc-65.jpg" alt="65"><figcaption class="hu">65. oldal</figcaption><figcaption class="en">Page 65</figcaption></figure>
+      <figure><img src="french-doc-66.jpg" alt="66"><figcaption class="hu">66. oldal</figcaption><figcaption class="en">Page 66</figcaption></figure>
+      <figure><img src="french-doc-67.jpg" alt="67"><figcaption class="hu">67. oldal</figcaption><figcaption class="en">Page 67</figcaption></figure>
+      <figure><img src="french-doc-68.jpg" alt="68"><figcaption class="hu">68. oldal</figcaption><figcaption class="en">Page 68</figcaption></figure>
+      <figure><img src="french-doc-69.jpg" alt="69"><figcaption class="hu">69. oldal</figcaption><figcaption class="en">Page 69</figcaption></figure>
+      <figure><img src="french-doc-70.jpg" alt="70"><figcaption class="hu">70. oldal</figcaption><figcaption class="en">Page 70</figcaption></figure>
+      <figure><img src="french-doc-71.jpg" alt="71"><figcaption class="hu">71. oldal</figcaption><figcaption class="en">Page 71</figcaption></figure>
+      <figure><img src="french-doc-72.jpg" alt="72"><figcaption class="hu">72. oldal</figcaption><figcaption class="en">Page 72</figcaption></figure>
+      <figure><img src="french-doc-73.jpg" alt="73"><figcaption class="hu">73. oldal</figcaption><figcaption class="en">Page 73</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 20. Fegyveres garázdaság 2015-2018 -->
   <section>
     <div class="section-header">
-      <div class="section-num">19</div>
-      <h2 class="section-title red">Szeptember 23-24. Budapest visszatérés Franciaországból (46 oldal)</h2>
+      <div class="section-num">20</div>
+      <h2 class="section-title red">Fegyveres garázdaság 2015-2018 (3 oldal)</h2>
+    </div>
+    <div class="hu">
+      <p class="blue">2015–2018 közötti időszakban történt fegyveres garázdaság ügy dokumentumai.</p>
+    </div>
+    <div class="en">
+      <p class="blue">Documents related to the armed public nuisance case from 2015–2018.</p>
     </div>
     <div class="images-grid">
-      <figure><img src="french-doc-28.jpg" alt="Visszatérés 28"><figcaption class="hu">28. oldal</figcaption><figcaption class="en">Page 28</figcaption></figure>
-      <figure><img src="french-doc-29.jpg" alt="Visszatérés 29"><figcaption class="hu">29. oldal</figcaption><figcaption class="en">Page 29</figcaption></figure>
-      <figure><img src="french-doc-30.jpg" alt="Visszatérés 30"><figcaption class="hu">30. oldal</figcaption><figcaption class="en">Page 30</figcaption></figure>
-      <figure><img src="french-doc-31.jpg" alt="Visszatérés 31"><figcaption class="hu">31. oldal</figcaption><figcaption class="en">Page 31</figcaption></figure>
-      <figure><img src="french-doc-32.jpg" alt="Visszatérés 32"><figcaption class="hu">32. oldal</figcaption><figcaption class="en">Page 32</figcaption></figure>
-      <figure><img src="french-doc-33.jpg" alt="Visszatérés 33"><figcaption class="hu">33. oldal</figcaption><figcaption class="en">Page 33</figcaption></figure>
-      <figure><img src="french-doc-34.jpg" alt="Visszatérés 34"><figcaption class="hu">34. oldal</figcaption><figcaption class="en">Page 34</figcaption></figure>
-      <figure><img src="french-doc-35.jpg" alt="Visszatérés 35"><figcaption class="hu">35. oldal</figcaption><figcaption class="en">Page 35</figcaption></figure>
-      <figure><img src="french-doc-36.jpg" alt="Visszatérés 36"><figcaption class="hu">36. oldal</figcaption><figcaption class="en">Page 36</figcaption></figure>
-      <figure><img src="french-doc-37.jpg" alt="Visszatérés 37"><figcaption class="hu">37. oldal</figcaption><figcaption class="en">Page 37</figcaption></figure>
-      <figure><img src="french-doc-38.jpg" alt="Visszatérés 38"><figcaption class="hu">38. oldal</figcaption><figcaption class="en">Page 38</figcaption></figure>
-      <figure><img src="french-doc-39.jpg" alt="Visszatérés 39"><figcaption class="hu">39. oldal</figcaption><figcaption class="en">Page 39</figcaption></figure>
-      <figure><img src="french-doc-40.jpg" alt="Visszatérés 40"><figcaption class="hu">40. oldal</figcaption><figcaption class="en">Page 40</figcaption></figure>
-      <figure><img src="french-doc-41.jpg" alt="Visszatérés 41"><figcaption class="hu">41. oldal</figcaption><figcaption class="en">Page 41</figcaption></figure>
-      <figure><img src="french-doc-42.jpg" alt="Visszatérés 42"><figcaption class="hu">42. oldal</figcaption><figcaption class="en">Page 42</figcaption></figure>
-      <figure><img src="french-doc-43.jpg" alt="Visszatérés 43"><figcaption class="hu">43. oldal</figcaption><figcaption class="en">Page 43</figcaption></figure>
-      <figure><img src="french-doc-44.jpg" alt="Visszatérés 44"><figcaption class="hu">44. oldal</figcaption><figcaption class="en">Page 44</figcaption></figure>
-      <figure><img src="french-doc-45.jpg" alt="Visszatérés 45"><figcaption class="hu">45. oldal</figcaption><figcaption class="en">Page 45</figcaption></figure>
-      <figure><img src="french-doc-46.jpg" alt="Visszatérés 46"><figcaption class="hu">46. oldal</figcaption><figcaption class="en">Page 46</figcaption></figure>
-      <figure><img src="french-doc-47.jpg" alt="Visszatérés 47"><figcaption class="hu">47. oldal</figcaption><figcaption class="en">Page 47</figcaption></figure>
-      <figure><img src="french-doc-48.jpg" alt="Visszatérés 48"><figcaption class="hu">48. oldal</figcaption><figcaption class="en">Page 48</figcaption></figure>
-      <figure><img src="french-doc-49.jpg" alt="Visszatérés 49"><figcaption class="hu">49. oldal</figcaption><figcaption class="en">Page 49</figcaption></figure>
-      <figure><img src="french-doc-50.jpg" alt="Visszatérés 50"><figcaption class="hu">50. oldal</figcaption><figcaption class="en">Page 50</figcaption></figure>
-      <figure><img src="french-doc-51.jpg" alt="Visszatérés 51"><figcaption class="hu">51. oldal</figcaption><figcaption class="en">Page 51</figcaption></figure>
-      <figure><img src="french-doc-52.jpg" alt="Visszatérés 52"><figcaption class="hu">52. oldal</figcaption><figcaption class="en">Page 52</figcaption></figure>
-      <figure><img src="french-doc-53.jpg" alt="Visszatérés 53"><figcaption class="hu">53. oldal</figcaption><figcaption class="en">Page 53</figcaption></figure>
-      <figure><img src="french-doc-54.jpg" alt="Visszatérés 54"><figcaption class="hu">54. oldal</figcaption><figcaption class="en">Page 54</figcaption></figure>
-      <figure><img src="french-doc-55.jpg" alt="Visszatérés 55"><figcaption class="hu">55. oldal</figcaption><figcaption class="en">Page 55</figcaption></figure>
-      <figure><img src="french-doc-56.jpg" alt="Visszatérés 56"><figcaption class="hu">56. oldal</figcaption><figcaption class="en">Page 56</figcaption></figure>
-      <figure><img src="french-doc-57.jpg" alt="Visszatérés 57"><figcaption class="hu">57. oldal</figcaption><figcaption class="en">Page 57</figcaption></figure>
-      <figure><img src="french-doc-58.jpg" alt="Visszatérés 58"><figcaption class="hu">58. oldal</figcaption><figcaption class="en">Page 58</figcaption></figure>
-      <figure><img src="french-doc-59.jpg" alt="Visszatérés 59"><figcaption class="hu">59. oldal</figcaption><figcaption class="en">Page 59</figcaption></figure>
-      <figure><img src="french-doc-60.jpg" alt="Visszatérés 60"><figcaption class="hu">60. oldal</figcaption><figcaption class="en">Page 60</figcaption></figure>
-      <figure><img src="french-doc-61.jpg" alt="Visszatérés 61"><figcaption class="hu">61. oldal</figcaption><figcaption class="en">Page 61</figcaption></figure>
-      <figure><img src="french-doc-62.jpg" alt="Visszatérés 62"><figcaption class="hu">62. oldal</figcaption><figcaption class="en">Page 62</figcaption></figure>
-      <figure><img src="french-doc-63.jpg" alt="Visszatérés 63"><figcaption class="hu">63. oldal</figcaption><figcaption class="en">Page 63</figcaption></figure>
-      <figure><img src="french-doc-64.jpg" alt="Visszatérés 64"><figcaption class="hu">64. oldal</figcaption><figcaption class="en">Page 64</figcaption></figure>
-      <figure><img src="french-doc-65.jpg" alt="Visszatérés 65"><figcaption class="hu">65. oldal</figcaption><figcaption class="en">Page 65</figcaption></figure>
-      <figure><img src="french-doc-66.jpg" alt="Visszatérés 66"><figcaption class="hu">66. oldal</figcaption><figcaption class="en">Page 66</figcaption></figure>
-      <figure><img src="french-doc-67.jpg" alt="Visszatérés 67"><figcaption class="hu">67. oldal</figcaption><figcaption class="en">Page 67</figcaption></figure>
-      <figure><img src="french-doc-68.jpg" alt="Visszatérés 68"><figcaption class="hu">68. oldal</figcaption><figcaption class="en">Page 68</figcaption></figure>
-      <figure><img src="french-doc-69.jpg" alt="Visszatérés 69"><figcaption class="hu">69. oldal</figcaption><figcaption class="en">Page 69</figcaption></figure>
-      <figure><img src="french-doc-70.jpg" alt="Visszatérés 70"><figcaption class="hu">70. oldal</figcaption><figcaption class="en">Page 70</figcaption></figure>
-      <figure><img src="french-doc-71.jpg" alt="Visszatérés 71"><figcaption class="hu">71. oldal</figcaption><figcaption class="en">Page 71</figcaption></figure>
-      <figure><img src="french-doc-72.jpg" alt="Visszatérés 72"><figcaption class="hu">72. oldal</figcaption><figcaption class="en">Page 72</figcaption></figure>
-      <figure><img src="french-doc-73.jpg" alt="Visszatérés 73"><figcaption class="hu">73. oldal</figcaption><figcaption class="en">Page 73</figcaption></figure>
+      <figure><img src="garazda-doc-1.jpg" alt="1"><figcaption class="hu">1. oldal</figcaption><figcaption class="en">Page 1</figcaption></figure>
+      <figure><img src="garazda-doc-2.jpg" alt="2"><figcaption class="hu">2. oldal</figcaption><figcaption class="en">Page 2</figcaption></figure>
+      <figure><img src="garazda-doc-3.jpg" alt="3"><figcaption class="hu">3. oldal</figcaption><figcaption class="en">Page 3</figcaption></figure>
     </div>
   </section>
 
